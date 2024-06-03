@@ -1,0 +1,26 @@
+module.exports = {
+  entry: './src/index.js', // or the entry point of your application
+  output: {
+    filename: 'bundle.js',
+    path: __dirname + '/dist'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
+      }
+    ]
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.json'],
+    alias: {
+      'faker': require.resolve('faker')
+    }
+  },
+  devServer: {
+    contentBase: './dist',
+    hot: true
+  }
+};

@@ -1,0 +1,33 @@
+.home{
+    display: flex;
+}
+
+.productContainer{
+    display: flex;
+    width: 78;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.filters {
+    background-color: darkolivegreen;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 20px;
+    color: #f0f0f0;
+    border-radius: 6%;
+    margin: 10px;
+    height: 89vh;
+    color:azure;
+}
+
+.filters >span{
+ padding-bottom: 20px;
+}
+.title{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
