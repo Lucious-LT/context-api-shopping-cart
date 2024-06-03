@@ -1,7 +1,10 @@
 import React from 'react'
 import {Form, Button} from 'react-bootstrap'
+import Rating from './Rating'
 
 const Filters =()=>{
+
+    const [rate, setRate] = React.useState(3) 
     return(
         <div className='filters'>
             <span className='title'>Filters</span>
@@ -43,7 +46,7 @@ const Filters =()=>{
                 </span>
                 <span>
                     <label style={{paddingRight:10}}>Rating: </label>
-                    <Rating rating={byRating} style={{cursor:'pointer'}} />
+                    <Rating rating={rate} style={{cursor:'pointer'}} />
                 </span>
                
                 <Button variant='light'>Clear Filters</Button> 
