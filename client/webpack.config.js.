@@ -16,7 +16,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.json'],
     alias: {
-      'faker': require.resolve('faker')
+      'faker': require.resolve('faker.js')
     }
   },
   devServer: {
