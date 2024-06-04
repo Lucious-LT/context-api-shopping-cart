@@ -6,7 +6,9 @@ import React, { useContext, useReducer } from 'react';
 
 
 const Cart = createContext();
+
 faker.seed(99);
+
 const Context = ({ children }) => {
     const products = [...Array(20)].map(()=>({
         id: faker.datatype.uuid(),
